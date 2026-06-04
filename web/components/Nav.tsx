@@ -21,20 +21,11 @@ export default function Nav() {
       style={{ backgroundColor: "var(--nav-bg)" }}
     >
       <nav className="mx-auto flex max-w-5xl items-center gap-3 px-4 py-3 sm:px-6">
-        <a href="#hero" className="shrink-0 font-mono text-lg font-bold tracking-tight text-text">
-          prism
-        </a>
+        <a href="#hero" className="shrink-0 font-mono text-lg font-bold tracking-tight text-text">prism</a>
         <ul className="flex flex-1 items-center gap-1 overflow-x-auto">
           {LINKS.map((link) => (
             <li key={link.id}>
-              
-                href={`#${link.id}`}
-                className={`block whitespace-nowrap rounded px-3 py-1.5 text-sm transition-colors ${
-                  active === link.id ? "bg-surface-2 text-text" : "text-text-muted hover:text-text"
-                }`}
-              >
-                {link.label}
-              </a>
+              <a href={`#${link.id}`} className={`block whitespace-nowrap rounded px-3 py-1.5 text-sm transition-colors ${active === link.id ? "bg-surface-2 text-text" : "text-text-muted hover:text-text"}`}>{link.label}</a>
             </li>
           ))}
         </ul>

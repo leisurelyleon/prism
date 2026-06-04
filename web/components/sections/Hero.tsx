@@ -18,18 +18,8 @@ export default function Hero() {
           tokens. Switch the theme and watch it all transition at once.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          
-            href="#palette"
-            className="inline-flex items-center justify-center rounded bg-accent px-4 py-2 text-sm font-medium text-accent-contrast transition-all hover:opacity-90 active:scale-95"
-          >
-            Explore the palette
-          </a>
-          
-            href="#components"
-            className="inline-flex items-center justify-center rounded bg-surface-2 px-4 py-2 text-sm font-medium text-text transition-all hover:bg-border active:scale-95"
-          >
-            View components
-          </a>
+          <a href="#palette" className="inline-flex items-center justify-center rounded bg-accent px-4 py-2 text-sm font-medium text-accent-contrast transition-all hover:opacity-90 active:scale-95">Explore the palette</a>
+          <a href="#components" className="inline-flex items-center justify-center rounded bg-surface-2 px-4 py-2 text-sm font-medium text-text transition-all hover:bg-border active:scale-95">View components</a>
         </div>
       </div>
     </section>
